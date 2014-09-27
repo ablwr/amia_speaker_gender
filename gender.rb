@@ -11,14 +11,15 @@ first_names.each do |name|
   male = []
   andy = []
 
-  name = name.scan(/^\w+/)[0].to_s
+  name_check = d.get_gender(name.scan(/^\w+/)[0].to_s)
 
-  if d.get_gender("name") == :female
+  if d.get_gender("name_check") == :female
     female.push(name)
-  elsif d.get_gender("name") == :male
+  elsif d.get_gender("name_check") == :male
     male.push(name)
   else
     andy.push(name)
   end
 
 end
+
