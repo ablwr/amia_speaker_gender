@@ -4,15 +4,14 @@ require 'sexmachine'
 
 class GenderSorter
 
-  d = SexMachine::Detector.new(case_sensitive: false)
-
-  female = []
-  mostly_female = []
-  male = []
-  mostly_male = []
-  andy = []
-
   def sorting_hat(first_names)
+    d = SexMachine::Detector.new(case_sensitive: false)
+    female = []
+    mostly_female = []
+    male = []
+    mostly_male = []
+    andy = []
+
     first_names.each do |name|
       name_check = name.scan(/^\w+/)[0].to_s
       if d.get_gender(name_check) == :female
@@ -27,13 +26,14 @@ class GenderSorter
         andy.push(name)
       end
     end
+
   end
 
   def give_data
     puts "#{female.length} ladies and their names are... \n #{female}" 
-    puts "#{male.length} ladies and their names are... \n #{male}"
-    puts "#{mostly_female.length} ladies and their names are... \n #{mostly_female}"
-    puts "#{mostly_male.length} ladies and their names are... \n #{mostly_male}"
+    puts "#{male.length} dudes and their names are... \n #{male}"
+    puts "#{mostly_female.length} maybe-ladies and their names are... \n #{mostly_female}"
+    puts "#{mostly_male.length} maybe-dudes and their names are... \n #{mostly_male}"
     puts "#{andy.length} andies and their names are... \n #{andy}"
   end
 end
