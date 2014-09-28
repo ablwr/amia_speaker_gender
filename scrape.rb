@@ -1,6 +1,3 @@
-require 'nokogiri'
-require 'open-uri'
-
 class AMIA_Scraper
   attr_reader :amia_url
   attr_reader :amia_doc
@@ -22,4 +19,4 @@ class AMIA_Scraper
     first_names
   end
 
-
+end

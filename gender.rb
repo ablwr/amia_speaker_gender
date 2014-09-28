@@ -1,7 +1,3 @@
-require 'rubygems'
-require 'bundler/setup'
-require 'sexmachine'
-
 class GenderSorter
 
   def sorting_hat(first_names)
