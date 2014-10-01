@@ -1,4 +1,4 @@
-class GenderSorter
+# just copy paste
 
   def sorting_hat(first_names)
     d = SexMachine::Detector.new(case_sensitive: false)
@@ -32,4 +32,3 @@ class GenderSorter
     puts "#{mostly_male.length} maybe-dudes and their names are... \n #{mostly_male}"
     puts "#{andy.length} andies and their names are... \n #{andy}"
   end
-end
