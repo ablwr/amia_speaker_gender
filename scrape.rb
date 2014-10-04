@@ -24,3 +24,5 @@ first_names = amia_doc.search("p").collect{|e| e.text.split(/\n/) }.flatten!
   end
 
 first_names
+
+
