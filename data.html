@@ -9,26 +9,6 @@
 <!-- Getting ahead of myself with some generic d3 -->
     <script>
 
-    var test_json = [  
-   {  
-      "name":"Taylor McBride",
-      "gender":"female",
-      "weight":1,
-      "type": "workshop"
-   },
-   {  
-      "name":"Dino Everett",
-      "gender":"male",
-      "weight":3,
-      "type": "workshop"
-   },
-   {  
-      "name":"Skip Elsheimer",
-      "gender":"male",
-      "weight":2,
-      "type": "workshop"
-   }];
-
       d3.json("json.json", function(data) {
 
       var canvas = d3.select("body").append("svg")
@@ -40,7 +20,7 @@
           .enter()
             .append("rect")
             .attr("width", function(d) { return d.weight * 100; })
-            .attr("height", 50)
+            .attr("height", 100)
             .attr("y", function(d) { return d.weight * 30; })
             .attr("fill", "blue");
 
@@ -49,7 +29,7 @@
           .enter()
             .append("text")
             .attr("fill", "red")
-            .attr("height", 50)
+            .attr("height", 100)
             .attr("y", 30)
             .text(function(d) { return d.name; });
       });
