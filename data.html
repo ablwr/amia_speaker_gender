@@ -1,37 +1,28 @@
 <!doctype html>
 <html>
   <head>
+    <title>AMIA 2014 Conference speakers by gender</title>
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-  .btn-custom {
-  background-color: hsl(0, 0%, 16%) !important;
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5b5b5b", endColorstr="#282828");
-  background-image: -khtml-gradient(linear, left top, left bottom, from(#5b5b5b), to(#282828));
-  background-image: -moz-linear-gradient(top, #5b5b5b, #282828);
-  background-image: -ms-linear-gradient(top, #5b5b5b, #282828);
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #5b5b5b), color-stop(100%, #282828));
-  background-image: -webkit-linear-gradient(top, #5b5b5b, #282828);
-  background-image: -o-linear-gradient(top, #5b5b5b, #282828);
-  background-image: linear-gradient(#5b5b5b, #282828);
-  border-color: #282828 #282828 hsl(0, 0%, 11%);
-  color: #fff !important;
-  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
-  -webkit-font-smoothing: antialiased;
-  }
-  </style>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <h4>AMIA 2014 Conference speakers by gender</h4>
-        <canvas id="myChart" width="200" height="200"></canvas>
+        <h3>AMIA 2014 Conference speakers by gender</h3>
         <br />
-        <button id="data" class="btn btn-custom">sans weight</button>
-        <button id="data2" class="btn btn-custom">unique speakers sans weight</button>
-        <button id="data3" class="btn btn-custom">only panels, sans weight</button>
-        <button id="data4" class="btn btn-custom">Weighted for speaking time</button>
-        <button id="data5" class="btn btn-custom">Weighted for time (panels only)</button>
+        <div class="col-md-3">
+        <canvas id="myChart" width="200" height="200"></canvas>
+        </div><div class="col-md-3">
+        <p>
+        <button id="data" class="btn">Show</button> All speakers </p>
+        <p>
+        <button id="data2" class="btn">Show</button> Unique speakers <p/>
+        <p>
+        <button id="data3" class="btn">Show</button> Only panels <p/>
+        <p>
+        <button id="data4" class="btn">Show</button> Weighted for speaking time <p/>
+        <p>
+        <button id="data5" class="btn">Show</button> Weighted for time, only panels <p/>
+      </div>
       </div>
     </div>
 
