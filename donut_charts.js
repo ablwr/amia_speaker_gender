@@ -37,8 +37,8 @@ $( "#data8" ).click(function() {
 
 // EIA
 $( "#data9" ).click(function() {
-  myChart2.segments[0].value = 7;
-  myChart2.segments[1].value = 5;
+  myChart2.segments[0].value = 6;
+  myChart2.segments[1].value = 6;
   myChart2.update();
 });
 
