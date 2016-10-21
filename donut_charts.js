@@ -30,7 +30,7 @@ $( "#data7" ).click(function() {
 
 // diyca
 $( "#data8" ).click(function() {
-  myChart2.segments[0].value = 19;
+  myChart2.segments[0].value = 17;
   myChart2.segments[1].value = 4;
   myChart2.update();
 });
