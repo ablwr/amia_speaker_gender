@@ -15,6 +15,39 @@ var data2 = [
   ]
 var myChart2 = new Chart(ctx2).Doughnut(data2);
 
+$( "#data6" ).click(function() {
+  myChart2.segments[0].value = 151;
+  myChart2.segments[1].value = 104;
+  myChart2.update();
+});
+
+// digipres
+$( "#data7" ).click(function() {
+  myChart2.segments[0].value = 14;
+  myChart2.segments[1].value = 4;
+  myChart2.update();
+});
+
+// diyca
+$( "#data8" ).click(function() {
+  myChart2.segments[0].value = 19;
+  myChart2.segments[1].value = 4;
+  myChart2.update();
+});
+
+// EIA
+$( "#data9" ).click(function() {
+  myChart2.segments[0].value = 7;
+  myChart2.segments[1].value = 5;
+  myChart2.update();
+});
+
+$( "#data10" ).click(function() {
+  myChart2.segments[0].value = 20;
+  myChart2.segments[1].value = 10;
+  myChart2.update();
+});
+
 var ctx = document.getElementById("myChart").getContext("2d");
 var data = [
   {
