@@ -1,3 +1,20 @@
+var ctx2 = document.getElementById("myChart2").getContext("2d");
+var data2 = [
+  {
+      value: 151,
+      color:"pink",
+      highlight: "red",
+      label: "Ladies"
+  },
+  {
+      value: 104,
+      color: "lightblue",
+      highlight: "blue",
+      label: "Gents"
+  }
+  ]
+var myChart2 = new Chart(ctx2).Doughnut(data2);
+
 var ctx = document.getElementById("myChart").getContext("2d");
 var data = [
   {
@@ -44,3 +61,4 @@ $( "#data5" ).click(function() {
   myChart.segments[1].value = 29.6;
   myChart.update();
 });
+
